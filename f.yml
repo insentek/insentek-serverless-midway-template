@@ -1,12 +1,28 @@
-service: my-midway-app         ## 应用发布到云平台的名字，一般指应用名
+service:
+  name: {{serviceName}}
+  description: {{serviceDescription}}
 
 provider:
-  name: aliyun                 ## 发布的云平台
+  name: aliyun
 
 deployType:
-  type: koa                    ## 部署的应用类型
+  type: koa
   version: 3.0.0
-
+functions:
+  fnName:
+    handler: index.handler
+    name: {{functionName}}
+    description: {{functionDescription}}
+    events:
+      - http:
+          path: /
+          method:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - HEAD
+            - OPTIONS
 custom:
   customDomain:
     domainName: auto

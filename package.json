@@ -1,5 +1,5 @@
 {
-  "name": "midway-quick-start",
+  "name": "{{projectName}}",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -53,6 +53,6 @@
     "type": "git",
     "url": ""
   },
-  "author": "anonymous",
+  "author": "{{author}}",
   "license": "MIT"
 }
