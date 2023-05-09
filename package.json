@@ -1,5 +1,5 @@
 {
-  "name": "{{projectName}}",
+  "name": "{{name}}}",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -38,7 +38,8 @@
     "lint:fix": "mwts fix",
     "ci": "npm run cov",
     "build": "midway-bin build -c",
-    "deploy": "midway-bin deploy"
+    "deploy": "midway-bin deploy",
+    "deploy-clean": "midway-bin deploy --resetConfig"
   },
   "midway-integration": {
     "lifecycle": {
